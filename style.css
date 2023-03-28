@@ -1,3 +1,121 @@
+:root {
+    --primary-orange: rgba(166,75,42,100);
+    --light-orange: rgba(210,102,63,100);
+    --yellow: rgba(255,255,93,100);
+    --white: rgba(245,231,213,100);
+    --gray: rgba(107,97,97,100);
+    --text-white: rgba(242,228,228,100);
+    --text-dark: rgba(53,45,45,100);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Literata&display=swap');
+
+/* CONSTANTS */
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+h2,h2,h3 {
+    font-family: 'Literata', serif;
+}
+
 h1 {
-    color:rgb(220, 23, 23);
+    font-size: 45px;
+}
+
+h1 {
+    font-size: 30px; 
+}
+
+h3 {
+    font-size: 70px;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 15px;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    background-color: var(--primary-orange);
+    font-family: 'Literata', serif;
+    width: 1440px;
+    height: 82px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-white)
+}
+
+/* HERO */
+
+.hero {
+    background-image: url(images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+.hero-photo {
+    filter: drop-shadow(4px 4px 8px black);
+}
+
+/* BIBLIOGRAPHY */
+
+.bibliography {
+    background-color: var(--white);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border: 2.5px var(--light-orange);
+}
+
+.biblio-photo {
+    filter: drop-shadow(4px 4px 8px black);
+}
+
+/* WORKS */
+
+/* TIMELINE */
+
+/* INFLUENCE */
+
+/* INFLUENCE ON MODERN WORKS */
+
+/* RESOURCES */
+
+/* FOOTER */
+
+.footer {
+    background: var(--primary-orange);
+    display: flex;
+}
+
+.social {
+    justify-content: center;
+    text-align: center;
 }
