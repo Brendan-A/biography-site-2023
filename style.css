@@ -1,11 +1,13 @@
 :root {
     --primary-orange: rgba(166,75,42,100);
     --light-orange: rgba(210,102,63,100);
+    --dark-orange: rgba(125,50,23,100);
     --yellow: rgba(255,255,93,100);
     --white: rgba(245,231,213,100);
     --gray: rgba(107,97,97,100);
     --text-white: rgba(242,228,228,100);
     --text-dark: rgba(53,45,45,100);
+    --button-white: rgba(223,211,195,100);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
@@ -18,15 +20,16 @@
     margin: 0 auto;
 }
 
-h2,h2,h3 {
+h1,h2,h3,h4 {
     font-family: 'Literata', serif;
+    color: var(--text-dark);
 }
 
 h1 {
     font-size: 45px;
 }
 
-h1 {
+h2 {
     font-size: 30px; 
 }
 
@@ -34,9 +37,31 @@ h3 {
     font-size: 70px;
 }
 
+h4 {
+    font-size: 20px;
+}
+
 p {
     font-family: 'Catamaran', sans-serif;
     font-size: 15px;
+    color: var(--text-dark);
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--button-white);
+    color: var(--text-dark);
+    font-family: 'Literata', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--white);
+    filter: drop-shadow(0px 0px 8px var(--yellow));
 }
 
 /* NAVIGATION */
@@ -72,13 +97,13 @@ nav ul {
     background-size: cover;
     height: 70vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 2em;
 }
 
 .hero-photo {
-    filter: drop-shadow(4px 4px 8px black);
+    filter: drop-shadow(4px 4px 8px var(--text-dark));
 }
 
 /* BIBLIOGRAPHY */
@@ -88,34 +113,109 @@ nav ul {
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: space-inbetween;
     align-items: center;
-    padding: 2em;
     border: 2.5px var(--light-orange);
 }
 
+.biblio-content {
+    width: 650px;
+    padding: 55px 127px 244px 171px;
+}
+
 .biblio-photo {
-    filter: drop-shadow(4px 4px 8px black);
+    filter: drop-shadow(4px 4px 8px var(--text-dark));
+    width: 318px;
 }
 
 /* WORKS */
 
+.section-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-orange);
+    border: 2.5px var(--light-orange);
+}
+
+.cards {
+    width: 435px;  
+    margin: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 106px;
+    padding-bottom: 106px;
+    color: var(--text-white);
+}
+
 /* TIMELINE */
+
+.timeline-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
 
 /* INFLUENCE */
 
+.influence {
+    background-color: var(--primary-orange);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-inbetween;
+    align-items: center;
+    border: 2.5px var(--light-orange);
+}
+
+.influence-content {
+    width: 650px;
+    padding: 55px 127px 244px 171px;
+    color: var(--text-white)
+}
+
+.influence-photo {
+    filter: drop-shadow(4px 4px 8px var(--text-dark));
+    width: 318px;
+}
+
 /* INFLUENCE ON MODERN WORKS */
 
+.modern-works {
+    background-color: var(--white)
+}
+
+.modern-works-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em; 
+}
+
+.modern-works-info h2{
+    width: 652px;
+}
+
+.modern-works-info p{
+    width: 652px;
+}
+
 /* RESOURCES */
+
+.more-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-orange);
+}
 
 /* FOOTER */
 
 .footer {
-    background: var(--primary-orange);
     display: flex;
-}
-
-.social {
     justify-content: center;
     text-align: center;
+    background-color: var(--dark-orange);
 }
