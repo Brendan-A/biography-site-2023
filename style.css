@@ -9,6 +9,7 @@
     --text-dark: rgba(53,45,45,100);
     --button-white: rgba(223,211,195,100);
     --black: rgba(0,0,0,100);
+    --real-white: rgba(255,255,255,100);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
@@ -19,12 +20,21 @@ html {
 }
 
 
+/* 
+hero exact placements
+footer 
+*/
+
+
+
 /* CONSTANTS */
+
 
 
 .container {
     width: 1440px;
     margin: 0 auto;
+    background-color: var(--white);
 }
 
 h1,h2,h3,h4 {
@@ -95,8 +105,16 @@ button:hover {
     font-size: 2em;
 }
 
+img {
+    border: 3px solid;
+    border-color: var(--light-orange);
+    filter: drop-shadow(4px 4px 8px var(--black));
+}
+
+
 
 /* NAVIGATION */
+
 
 
 .navigation {
@@ -112,6 +130,8 @@ nav {
 
 nav a {
     text-decoration: none;
+    padding: 30px;
+    font-weight: bold;
 }
 
 nav li {
@@ -122,6 +142,14 @@ nav li {
 
 nav ul {
     color: var(--text-white)
+}
+
+nav a:hover {
+    color: var(--text-white);
+  }
+
+nav a:active {
+    color: var(--real-white);
 }
 
 
@@ -142,8 +170,8 @@ nav ul {
     padding: 2em;
 }
 
-.hero-photo {
-    filter: drop-shadow(4px 4px 8px var(--black));
+.hero-photo img {
+    border: 0px;
 }
 
 .hero-content h3 {
@@ -186,7 +214,6 @@ nav ul {
     display: flex;
     justify-content: space-inbetween;
     align-items: center;
-    border: 2.5px var(--light-orange);
 }
 
 .biblio-content {
@@ -202,7 +229,6 @@ nav ul {
     filter: drop-shadow(4px 4px 8px var(--text-dark));
     width: 318px;
 }
-
 
 
 /* WORKS */
@@ -228,11 +254,6 @@ nav ul {
     color: var(--text-white);
 }
 
-.cards img {
-    filter: drop-shadow(4px 4px 8px var(--black));
-}
-
-
 
 /* TIMELINE */
 
@@ -240,10 +261,6 @@ nav ul {
 
 .timeline {
     background-color: var(--white);
-}
-
-.timeline-photo {
-    filter: drop-shadow(4px 4px 8px var(--black));
 }
 
 .timeline-content {
@@ -292,12 +309,6 @@ nav ul {
     color: var(--text-white);
 }
 
-.influence-photo {
-    filter: drop-shadow(4px 4px 8px var(--black));
-    width: 318px;
-}
-
-
 
 /* INFLUENCE ON MODERN WORKS */
 
@@ -328,18 +339,18 @@ nav ul {
     width: 652px;
 }
 
-.modern-works-photo {
-    filter: drop-shadow(4px 4px 8px var(--black));
-}
-
-
 
 /* RESOURCES */
 
-
+.more-info {
+    background-color: var(--primary-orange);
+    height: 50px;
+    padding: 10px;
+}
 
 .more-info h1 {
     color: var(--text-white);
+    text-align: center;
 }
 
 
@@ -350,7 +361,16 @@ nav ul {
 
 .footer {
     display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
     background-color: var(--dark-orange);
+}
+
+.footer img {
+    border: none;
+    filter: none;
+}
+
+.footer h4 {
+    color: var(--text-white);
 }
