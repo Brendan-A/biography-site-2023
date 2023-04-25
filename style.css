@@ -132,6 +132,7 @@ nav a {
     text-decoration: none;
     padding: 30px;
     font-weight: bold;
+    color: var(--text-white)
 }
 
 nav li {
@@ -161,7 +162,9 @@ nav a:visited :active {
     color: var(--text-white)
 }
 
-
+nav a:link {
+    color: var(--text-white)
+}
 
 
 /* HERO */
@@ -281,9 +284,9 @@ nav a:visited :active {
 
 .timeline-cards {
     background-color: var(--white);
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: flex-start; */
+    align-items: flex-start; 
     gap: 2em;
     margin: 85px;
 }
