@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scrolldown-style.css">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Dante Biography Site</title>
+</head>
+<body>
+
+    <div class="section">
+        <div class="image-container">
+          <div class= "image" style="background-image: url('images/limbo-uk.jpg')"></div>
+        </div>
+      </div>
+    <div class="section">
+        <div class="image-container">
+            <div class= "image" style="background-image: url('images/lust-uk.jpg')"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="image-container">
+            <div class= "image" style="background-image: url('images/gluttony-uk.jpg')"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="image-container">
+            <div class= "image" style="background-image: url('images/greed-uk.jpg')"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="image-container">
+            <div class= "image" style="background-image: url('images/wrath-uk.jpg')"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="image-container">
+            <div class= "image" style="background-image: url('images/heresy-uk.jpg')"></div>
+        </div>
+    </div>
+           
+         <script>
+           window.onscroll = function() { changeImage() }
+           
+           function changeImage () {
+             var scroll = window.scrollY + (window.innerHeight / 3);
+             
+             [...document.getElementsByClassName('section')].forEach(el => {
+               el.classList.remove('active');
+               
+               if(el.offsetTop <= scroll && el.offsetTop + el.offsetHeight > scroll) {
+                 el.classList.add('active');
+               }
+             })
+           } changeImage();
+          </script>     
+
+</body>

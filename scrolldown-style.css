@@ -1,19 +1,19 @@
 body {
     margin: 0;
-}
-
-.section {
-    display: flex;
+  }
+  
+  .section {
+    display:flex;
     min-height: 100vh;
     position: relative;
-}
-
-.image-container {
+  }
+  
+  .image-container {
     position: relative;
-    display:  flex;
-}
-
-.image {
+    display: flex;
+  }
+  
+  .image {
     height: 100vh;
     position: fixed;
     width: 100%;
@@ -24,10 +24,20 @@ body {
     mix-blend-mode: multiply;
     filter: blur(30px);
     opacity: 0;
-    transition: filter 0.5s ease, opacity 0.5s ease; 
-}
-
-.section.active .image {
+    transition: filter 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .section.active .image {
     opacity: 1;
     filter: blur(0);
-}
+  }
+
+  .info-scrolldown {
+    position: absolute;
+    color:red;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+  }
