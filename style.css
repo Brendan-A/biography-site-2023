@@ -93,6 +93,7 @@ button:hover {
 
 .controls li {
     list-style-type: none;
+    font-weight: bold;
 }
 
 .controls a {
